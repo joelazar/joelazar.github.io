@@ -3,19 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://joelazar.github.io/categories/</loc>
+    <loc>https://joelazar.github.io/tags/dogs/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joelazar.github.io/tags/funny/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://joelazar.github.io/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joelazar.github.io/resume/</loc>
+    <loc>https://joelazar.github.io/posts/first-post/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joelazar.github.io/posts/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://joelazar.github.io/tags/</loc>
+    <lastmod>2020-03-25T20:30:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joelazar.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://joelazar.github.io/resume/</loc>
   </url>
   
 </urlset>
