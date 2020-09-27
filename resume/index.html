@@ -4,10 +4,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Jozsef Lazar">
-    <meta name="description" content="Jozsef Lazar&#39;s personal website">
+    <meta name="description" content="József Gábor Lázár Education 2011 - 2016 Bachelor of Mathematics &ndash; Eötvös Loránd University, Budapest &ndash; specialization: Applied Mathematics
+2017 ISTQB certificate &ndash; International Software Testing Qualifications Board, Budapest &ndash; Foundation Level
+2019 Machine Learning &ndash; Coursera &ndash; Standford University &ndash; Certificate
+Bachelor Thesis Title: An auto-catalytic reaction-diffusion equation&rsquo;s numerical analysis
+Supervisor: Associate Professor, János Karátson
+Description: A reaction-diffusion equation is a special partial differential equation which models the concentration of the chemical substances in a reaction.">
     <meta name="keywords" content="blog,developer,personal">
+
+    
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Resume"/>
@@ -42,13 +50,13 @@ Description: A reaction-diffusion equation is a special partial differential equ
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://joelazar.github.io/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://joelazar.github.io/css/coder.min.9836c03fe5c87d102278a33e86d0591ef36c89b1e17e8e547ebf84c05cee010e.css" integrity="sha256-mDbAP&#43;XIfRAieKM&#43;htBZHvNsibHhfo5Ufr&#43;EwFzuAQ4=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -57,10 +65,8 @@ Description: A reaction-diffusion equation is a special partial differential equ
       
         
         
-        <link rel="stylesheet" href="https://joelazar.github.io/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://joelazar.github.io/css/coder-dark.min.717236c74e0a5208ef73964a9f44c6b443b689a95b270d8b2a40d0c012460dac.css" integrity="sha256-cXI2x04KUgjvc5ZKn0TGtEO2ialbJw2LKkDQwBJGDaw=" crossorigin="anonymous" media="screen" />
       
-    
-
     
 
     
@@ -70,14 +76,19 @@ Description: A reaction-diffusion equation is a special partial differential equ
     <link rel="icon" type="image/png" href="https://joelazar.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://joelazar.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.68.1" />
-  </head>
+    <link rel="apple-touch-icon" href="https://joelazar.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon"  sizes="180x180" href="https://joelazar.github.io/images/apple-touch-icon.png">
 
+    <meta name="generator" content="Hugo 0.75.1" />
+  </head>
+  
   
   
     
   
-  <body class="colorscheme-dark">
+  <body class="colorscheme-dark"
+        onload=""
+  >
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
@@ -85,22 +96,30 @@ Description: A reaction-diffusion equation is a special partial differential equ
       joelazar
     </a>
     
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
+      <span id="dark-mode-toggle" class="float-right">
+        <i class="fas fa-adjust fa-fw"></i>
+      </span>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fas fa-bars fa-fw"></i>
+      </label>
+      <ul class="navigation-list">
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://joelazar.github.io/posts/">Blog</a>
-          </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://joelazar.github.io/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://joelazar.github.io/resume/">Resume</a>
+            </li>
+          
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://joelazar.github.io/resume/">Resume</a>
-          </li>
         
-      
-      
-    </ul>
+        <li class="navigation-item separator">
+          <span>|</span>
+        </li>
+      </ul>
     
   </section>
 </nav>
@@ -115,7 +134,7 @@ Description: A reaction-diffusion equation is a special partial differential equ
     </header>
 
     <h1 id="józsef-gábor-lázár">József Gábor Lázár</h1>
-<p><img src="https://joelazar.github.io/profile2.jpg" alt="Me again"></p>
+<p><img src="https://joelazar.github.io/resume.jpg" alt="Me again"></p>
 <h2 id="education">Education</h2>
 <p><code>2011 - 2016</code> <strong>Bachelor of Mathematics</strong> &ndash; <em>Eötvös Loránd University, Budapest &ndash; specialization: Applied Mathematics</em></p>
 <p><code>2017</code> <strong>ISTQB certificate</strong> &ndash; <em>International Software Testing Qualifications Board, Budapest &ndash; Foundation Level</em></p>
@@ -126,13 +145,16 @@ Description: A reaction-diffusion equation is a special partial differential equ
 <p>Description: A reaction-diffusion equation is a special partial differential equation which models the concentration of the chemical substances in a reaction. The equation that I am analyzing is in a steady state. It was mentioned in a mathematics book which was published in the middle of the 80’s. My analysis is about in which case can the equation be solved and I am trying to approximate the solution with finite element method. I&rsquo;ve implemented the solution analyzed the results in Matlab.
 My <a href="http://www.cs.elte.hu/blobs/diplomamunkak/bsc_alkmat/2016/lazar_jozsef.pdf">thesis</a> in Hungarian.</p>
 <h2 id="work-experience">Work Experience</h2>
-<h4 id="__computer-vision-software-engineer__----continental-ag-budapest"><strong>Computer Vision Software Engineer</strong> &ndash; <em>Continental AG, Budapest</em></h4>
-<p><code>2019. jan - present</code></p>
-<p>Currently I&rsquo;m working on Continental&rsquo;s new generation front facing camera development. My main responsibilities are to developing and extending the software component for the embedded hardware and test the newly trained convolutional neural networks on our test environment. I was recently nominated to be the component owner of the whole software component itself and with this I&rsquo;ve become the leader of a small engineering group of five people.</p>
-<h4 id="__software-specialist__----nokia-networks-budapest"><strong>Software Specialist</strong> &ndash; <em>Nokia Networks, Budapest</em></h4>
+<h4 id="__backend-engineer__----raffleai-copenhagen-denmark"><strong>Backend Engineer</strong> &ndash; <em>raffle.ai, Copenhagen, Denmark</em></h4>
+<p><code>2020. apr - present</code></p>
+<p>Currently I&rsquo;m working as a backend engineer for a small danish AI company, using state of the art technologies to make robust and well scalable services to our awesome products.</p>
+<h4 id="__computer-vision-software-engineer__----continental-ag-budapest-hungary"><strong>Computer Vision Software Engineer</strong> &ndash; <em>Continental AG, Budapest, Hungary</em></h4>
+<p><code>2019. jan - 2020. apr</code></p>
+<p>I had worked on Continental&rsquo;s new generation front facing camera development. My main responsibilities are to developing and extending the software component for the embedded hardware and test the newly trained convolutional neural networks on our test environment. I was recently nominated to be the component owner of the whole software component itself and with this I&rsquo;ve become the leader of a small engineering group of five people.</p>
+<h4 id="__software-specialist__----nokia-networks-budapest-hungary"><strong>Software Specialist</strong> &ndash; <em>Nokia Networks, Budapest, Hungary</em></h4>
 <p><code>2017. nov - 2018. dec</code></p>
 <p>After spending two years on this project I became pretty familiar with the whole product itself. Beside my implementation duties I was frequently taking part in software design discussions and have and important role of investigating customer issues. I&rsquo;ve been in India for three weeks also for supporting one of Nokia&rsquo;s key customer to help them setup our software to their core network. Since then this operator was able to go <a href="https://www.bgr.in/news/vodafone-4g-volte-now-live-in-mumbai-gujarat-and-delhi-heres-how-to-activate-on-your-smartphone/">live</a>. During this period I extended my skills with new languages like Golang and Perl. Also, I&rsquo;ve created and maintained a Gitlab CI pipeline for our loadbalancer solutions.</p>
-<h4 id="__software-engineer__----nokia-networks-budapest"><strong>Software Engineer</strong> &ndash; <em>Nokia Networks, Budapest</em></h4>
+<h4 id="__software-engineer__----nokia-networks-budapest-hungary"><strong>Software Engineer</strong> &ndash; <em>Nokia Networks, Budapest, Hungary</em></h4>
 <p><code>2015. feb - 2017. oct</code></p>
 <p>I was working on a project which was about how can a network element&rsquo;s software transform to become a cloud native one. This is called <a href="https://www.nokia.com/networks/products/telecom-application-server/">Nokia TAS</a>. The challenge was heavy because the legacy software was written to a special OS called DMX and it had to be converted to Linux to enable us to containerize the applications. My main responsibilities were the load balancers for HTTP and other interfaces and also how the business logic services should work with those. At my daily work I mainly used C/C++, Python, Linux, Docker, Kubernetes and Tnsdl. As for cloud at the beginning we used Eucalyptus (which is a AWS-compatible private cloud solution) and later we changed to OpenStack, which enabled us a bit more flexibility for cluster customizations.</p>
 <h2 id="languages">Languages</h2>
@@ -154,29 +176,54 @@ My <a href="http://www.cs.elte.hu/blobs/diplomamunkak/bsc_alkmat/2016/lazar_jozs
   </article>
 </section>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>golang, linux, ai, but most of all a proud co-owner of a senior wire fox terrier</p>
-    
-    
       
-        © 2020
+  <footer class="footer">
+    <section class="container">
       
-       Jozsef Lazar 
-    
-    
-       · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-    
-  </section>
-</footer>
+        <p>golang, linux, ai, but most of all a proud co-owner of a senior wire fox terrier</p>
+      
+      
+        ©
+        
+        2020
+         Jozsef Lazar 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
 
     </main>
+
+    
+      
+      <script src="https://joelazar.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
 
     
 <script type="application/javascript">
@@ -192,6 +239,8 @@ if (!doNotTrack) {
 }
 </script>
 
+
+    
 
     
 
