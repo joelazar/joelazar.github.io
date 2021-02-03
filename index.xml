@@ -17,17 +17,13 @@
     </item>
     
     <item>
-      <title>Resume</title>
+      <title>József Gábor Lázár</title>
       <link>https://joelazar.github.io/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://joelazar.github.io/resume/</guid>
-      <description>József Gábor Lázár    Education    2011 - 2016 Bachelor of Mathematics &amp;ndash; Eötvös Loránd University, Budapest &amp;ndash; specialization: Applied Mathematics
-2017 ISTQB certificate &amp;ndash; International Software Testing Qualifications Board, Budapest &amp;ndash; Foundation Level
-2019 Machine Learning &amp;ndash; Coursera &amp;ndash; Standford University &amp;ndash; Certificate
-Bachelor Thesis    Title: An auto-catalytic reaction-diffusion equation&amp;rsquo;s numerical analysis
-Supervisor: Associate Professor, János Karátson
-Description: A reaction-diffusion equation is a special partial differential equation which models the concentration of the chemical substances in a reaction.</description>
+      <description>Currently, I&amp;rsquo;m working as a Backend Engineer at raffle.ai where I&amp;rsquo;m continuously trying to improve our awesome products backend services.
+Before that I had worked for two big European companies for five years, where I could try myself in different fields. At Continental I had the chance to work on a front facing camera development based on AI technologies and at Nokia I was part of a huge global team which was across four different countries (Greece, USA, India and Hungary).</description>
     </item>
     
   </channel>
