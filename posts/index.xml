@@ -6,7 +6,16 @@
     <description>Recent content in Posts on joelazar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 20:30:01 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Feb 2021 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Refactored dotfiles</title>
+      <link>https://joelazar.github.io/posts/second-post/</link>
+      <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
+      
+      <guid>https://joelazar.github.io/posts/second-post/</guid>
+      <description>Finally, I managed to update my dotfiles today and change for chezmoi for managing them properly. It took a bit of time, but I&amp;rsquo;m quite happy with the result now. If you are interested you can find them here.</description>
+    </item>
+    
     <item>
       <title>My first post</title>
       <link>https://joelazar.github.io/posts/first-post-with-my-dogs/</link>
