@@ -5,7 +5,7 @@
     <link>https://joelazar.github.io/tags/dotfiles/</link>
     <description>Recent content in dotfiles on joelazar</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Fri, 12 Feb 2021 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/tags/dotfiles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refactored dotfiles</title>
@@ -13,7 +13,7 @@
       <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
       
       <guid>https://joelazar.github.io/posts/second-post/</guid>
-      <description>Finally, I managed to update my dotfiles today and change for chezmoi for managing them properly. It took a bit of time, but I&amp;rsquo;m quite happy with the result now. If you are interested you can find them here.</description>
+      <description>Finally, I managed to update my dotfiles today and change for chezmoi for managing them properly. It took a bit of time, but I&amp;rsquo;m pleased with the result now. If you are interested, you can find them here.</description>
     </item>
     
   </channel>
