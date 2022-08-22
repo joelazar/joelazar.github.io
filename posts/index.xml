@@ -6,7 +6,17 @@
     <description>Recent content in Posts on joelazar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Feb 2021 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Aug 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lost in translation - Remix edition</title>
+      <link>https://joelazar.github.io/posts/lost-in-translation/</link>
+      <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
+      
+      <guid>https://joelazar.github.io/posts/lost-in-translation/</guid>
+      <description>Last week I made a ⚡️ talk at Remix Copenhagen meetup. I thought I make a short blog post about the content if I already gather the material for it.
+There is a mistake in this code. Can you find it? 🔍 Link to heading import type { Note } from &amp;#39;@prisma/client&amp;#39;; import { useCatch, useLoaderData } from &amp;#39;@remix-run/react&amp;#39;; import type { LoaderFunction } from &amp;#39;@remix-run/server-runtime&amp;#39;; import { json } from &amp;#39;@remix-run/server-runtime&amp;#39;; import { prisma } from &amp;#39;~/db.</description>
+    </item>
+    
     <item>
       <title>Refactored dotfiles</title>
       <link>https://joelazar.github.io/posts/second-post/</link>

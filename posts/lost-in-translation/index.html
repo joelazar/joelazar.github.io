@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Lost in translation - Remix edition · joelazar
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+
+
+
+<meta name="author" content="József Lázár">
+<meta name="description" content="Receive the right data from your server in Remix">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lost in translation - Remix edition"/>
+<meta name="twitter:description" content="Receive the right data from your server in Remix"/>
+
+<meta property="og:title" content="Lost in translation - Remix edition" />
+<meta property="og:description" content="Receive the right data from your server in Remix" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://joelazar.github.io/posts/lost-in-translation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-22T08:00:00+01:00" />
+<meta property="article:modified_time" content="2022-08-22T08:00:00+01:00" />
+
+
+
+
+
+<link rel="canonical" href="https://joelazar.github.io/posts/lost-in-translation/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      joelazar
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://joelazar.github.io/posts/lost-in-translation/">
+              Lost in translation - Remix edition
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-22T08:00:00&#43;01:00">
+                August 22, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/remix/">remix</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/typescript/">typescript</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/network/">network</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/json/">JSON</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Last week I made a ⚡️ talk at <a href="https://www.meetup.com/remix-copenhagen/events/285981900/">Remix Copenhagen</a> meetup. I thought I make a short blog post about the content if I already gather the material for it.</p>
+<hr>
+<h2 id="there-is-a-mistake-in-this-code-can-you-find-it-">
+  There is a mistake in this code. Can you find it? 🔍
+  <a class="heading-link" href="#there-is-a-mistake-in-this-code-can-you-find-it-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">type</span> { Note } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@prisma/client&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> { useCatch, useLoaderData } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/react&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">type</span> { LoaderFunction } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/server-runtime&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> { json } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/server-runtime&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> { prisma } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;~/db.server&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">/*
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">export type Note = {
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">  id: string
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">  title: string
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">  body: string
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">  createdAt: Date
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">  updatedAt: Date
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">}
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">type</span> LoaderData = {
+</span></span><span style="display:flex;"><span>  notes: <span style="">Note</span>[];
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">const</span> loader: <span style="">LoaderFunction</span> = <span style="font-weight:bold">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> notes = <span style="font-weight:bold">await</span> prisma.note.findMany({});
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> json({ notes });
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">default</span> <span style="font-weight:bold">function</span> Problem() {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> { notes } = useLoaderData&lt;<span style="font-weight:bold">LoaderData</span>&gt;();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;&gt;
+</span></span><span style="display:flex;"><span>      {notes.map((note) =&gt; (
+</span></span><span style="display:flex;"><span>        &lt;<span style="font-weight:bold">div</span>
+</span></span><span style="display:flex;"><span>          key={note.id}
+</span></span><span style="display:flex;"><span>          className=<span style="font-style:italic">&#34;p flex flex-auto flex-col p-4 sm:p-6 lg:p-8&#34;</span>
+</span></span><span style="display:flex;"><span>        &gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="font-weight:bold">h2</span> className=<span style="font-style:italic">&#34;text-2xl font-bold&#34;</span>&gt;{note.title}&lt;/<span style="font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="font-weight:bold">ul</span> className=<span style="font-style:italic">&#34;text-lg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>              Created at: {Intl.DateTimeFormat(<span style="font-style:italic">&#39;en-US&#39;</span>).format(note.createdAt)}
+</span></span><span style="display:flex;"><span>            &lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>              Updated at: {Intl.DateTimeFormat(<span style="font-style:italic">&#39;en-US&#39;</span>).format(note.updatedAt)}
+</span></span><span style="display:flex;"><span>            &lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;Body: {note.body}&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>      ))}
+</span></span><span style="display:flex;"><span>    &lt;/&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="-solution">
+  ⚠️ Solution
+  <a class="heading-link" href="#-solution">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The problem is with the following lines:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>&lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>  Created at: {Intl.DateTimeFormat(<span style="font-style:italic">&#34;en-US&#34;</span>).format(note.createdAt)}
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>  Updated at: {Intl.DateTimeFormat(<span style="font-style:italic">&#34;en-US&#34;</span>).format(note.updatedAt)}
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span></code></pre></div><p>Here, <code>note.createdAt</code> and <code>note.updatedAt</code> will have the type <code>string</code> instead of <code>Date</code>.</p>
+<hr>
+<h2 id="explanation-">
+  Explanation 📜
+  <a class="heading-link" href="#explanation-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="at-page-navigation">
+  At page navigation
+  <a class="heading-link" href="#at-page-navigation">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The client gets the code-split bundle for that page, and at time <strong>same</strong> time, the loader for that route gets evaluated, which is a <strong>Fetch</strong> request to the server. The response body of that request will be encoded in <code>JSON</code>, so it has to be serializable. Date and some other types don&rsquo;t have a native <code>JSON</code> representation.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>┌────────────┐                       ┌─────────────┐
+</span></span><span style="display:flex;"><span>│     🖥️     ◄───code split bundle───┤     ☁️      │
+</span></span><span style="display:flex;"><span>│  browser   ◄───data from loader────┤   server    │
+</span></span><span style="display:flex;"><span>└────────────┘                       └─────────────┘
+</span></span></code></pre></div><p><img src="/lost-in-translation/navigation.png" alt="Navigation"></p>
+<h3 id="at-full-reload">
+  At full reload
+  <a class="heading-link" href="#at-full-reload">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A full reload on the same route will do a full server render, and the data will be just embedded in the HTML. Loaders will be evaluated on the server side, but the data still has to be serializable there too.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>┌────────────┐                       ┌─────────────┐
+</span></span><span style="display:flex;"><span>│     🖥️     ◄───full code bundle────┤     ☁️      │
+</span></span><span style="display:flex;"><span>│  browser   ◄────prefilled html─────┤   server    │
+</span></span><span style="display:flex;"><span>└────────────┘                       └─────────────┘
+</span></span></code></pre></div><p><img src="/lost-in-translation/full_reload.png" alt="Full reload"></p>
+<hr>
+<h2 id="ok-types">
+  OK types
+  <a class="heading-link" href="#ok-types">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>✅ string</li>
+<li>✅ number</li>
+<li>✅ boolean</li>
+<li>✅ null</li>
+<li>✅ Array</li>
+<li>✅ Object</li>
+</ul>
+<hr>
+<h2 id="problematic-types">
+  Problematic types
+  <a class="heading-link" href="#problematic-types">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>❌ Date</li>
+<li>❌ BigInt</li>
+<li>❌ Set</li>
+<li>❌ Map</li>
+<li>❌ RegExp</li>
+<li>❌ undefined</li>
+<li>❌ Error</li>
+<li>❌ NaN</li>
+</ul>
+<hr>
+<h2 id="at-least-we-get-a-linter-warning-since-remix-165">
+  At least we get a linter warning since remix 1.6.5
+  <a class="heading-link" href="#at-least-we-get-a-linter-warning-since-remix-165">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="/lost-in-translation/linter_warning.png" alt="Linter warning"></p>
+<hr>
+<h2 id="how-to-solve-it---stupid-solution">
+  How to solve it - stupid solution
+  <a class="heading-link" href="#how-to-solve-it---stupid-solution">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Convert the strings to Dates. For this type, it will work fine, as the <code>Date</code>&rsquo;s constructor accepts strings:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span>&lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>  Created at: {Intl.DateTimeFormat(<span style="font-style:italic">&#34;en-US&#34;</span>).format(<span style="font-weight:bold">new</span> Date(note.createdAt))}
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>  Updated at: {Intl.DateTimeFormat(<span style="font-style:italic">&#34;en-US&#34;</span>).format(<span style="font-weight:bold">new</span> Date(note.updatedAt))}
+</span></span><span style="display:flex;"><span>&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span></code></pre></div><p>However, there are types in which this method won&rsquo;t work. We need a more generic solution for this.</p>
+<hr>
+<h2 id="how-to-solve-it---the-proper-solution">
+  How to solve it - the proper solution
+  <a class="heading-link" href="#how-to-solve-it---the-proper-solution">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="new-features-since-remix-165">
+  New features since remix 1.6.5
+  <a class="heading-link" href="#new-features-since-remix-165">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>&ldquo;We enhanced the type signatures of loader and useLoaderData to make it possible to infer the data type from the return type of its related server function. To enable this feature, you will need to use the LoaderArgs type from your Remix runtime package instead of typing the function directly:&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">type</span> { LoaderFunction } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/[runtime]&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// --&gt;
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">import</span> <span style="font-weight:bold">type</span> { LoaderArgs } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/[runtime]&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">const</span> loader: <span style="">LoaderFunction</span> = <span style="font-weight:bold">async</span> (args) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> json&lt;<span style="font-weight:bold">LoaderData</span>&gt;(data);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// --&gt;
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">export</span> <span style="font-weight:bold">async</span> <span style="font-weight:bold">function</span> loader(args: <span style="">LoaderArgs</span>) {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> json(data);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>&ldquo;Then you can infer the loader data by using typeof loader as the type variable in useLoaderData:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">let</span> data = useLoaderData() <span style="font-weight:bold">as</span> LoaderData;
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// --&gt;
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">let</span> data = useLoaderData&lt;<span style="font-weight:bold">typeof</span> loader&gt;();
+</span></span></code></pre></div><p>With this change, you no longer need to manually define a LoaderData type (huge time and typo saver!), and we serialize all values so that useLoaderData can&rsquo;t return types that are impossible over the network, such as Date objects or functions.&rdquo;</p>
+<p>Reference: <a href="https://github.com/remix-run/remix/releases/tag/remix%401.6.5">Remix 1.6.5 release note</a></p>
+<h3 id="remix-typedjson">
+  remix-typedjson
+  <a class="heading-link" href="#remix-typedjson">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Drop in replacement for <code>useLoaderData</code>/<code>json</code> calls &ndash;&gt; it will automatically convert your non-serializable types back and forth.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">const</span> loaderData = useLoaderData&lt;<span style="font-weight:bold">typeof</span> loader&gt;();
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// --&gt;
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> loaderData = useTypedLoaderData&lt;<span style="font-weight:bold">typeof</span> loader&gt;();
+</span></span></code></pre></div><p>and</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">return</span> json({...})
+</span></span><span style="display:flex;"><span><span style="font-style:italic">// --&gt;
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">return</span> typedjson({...})
+</span></span></code></pre></div><p>Adding these two together:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-weight:bold">type</span> { LoaderArgs } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;@remix-run/server-runtime&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> { typedjson, useTypedLoaderData } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;remix-typedjson&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> { prisma } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#39;~/db.server&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">const</span> loader = <span style="font-weight:bold">async</span> (_: <span style="">LoaderArgs</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> notes = <span style="font-weight:bold">await</span> prisma.note.findMany({});
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> typedjson({ notes });
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">default</span> <span style="font-weight:bold">function</span> Problem() {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> { notes } = useTypedLoaderData&lt;<span style="font-weight:bold">typeof</span> loader&gt;();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;&gt;
+</span></span><span style="display:flex;"><span>      {notes.map((note) =&gt; (
+</span></span><span style="display:flex;"><span>        &lt;<span style="font-weight:bold">div</span>
+</span></span><span style="display:flex;"><span>          key={note.id}
+</span></span><span style="display:flex;"><span>          className=<span style="font-style:italic">&#34;p flex flex-auto flex-col p-4 sm:p-6 lg:p-8&#34;</span>
+</span></span><span style="display:flex;"><span>        &gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="font-weight:bold">h2</span> className=<span style="font-style:italic">&#34;text-2xl font-bold &#34;</span>&gt;{note.title}&lt;/<span style="font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="font-weight:bold">ul</span> className=<span style="font-style:italic">&#34;text-lg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>              Created at: {Intl.DateTimeFormat(<span style="font-style:italic">&#39;en-US&#39;</span>).format(note.createdAt)}
+</span></span><span style="display:flex;"><span>            &lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>              Updated at: {Intl.DateTimeFormat(<span style="font-style:italic">&#39;en-US&#39;</span>).format(note.updatedAt)}
+</span></span><span style="display:flex;"><span>            &lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="font-weight:bold">li</span>&gt;Body: {note.body}&lt;/<span style="font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>      ))}
+</span></span><span style="display:flex;"><span>    &lt;/&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This works now as we are sending a <code>__meta__</code> object with the original <code>JSON</code> content, so on the client side the necessary data could be converted to the right type.</p>
+<p><img src="/lost-in-translation/remix_typedjson_resp.png" alt="New response"></p>
+<hr>
+<h2 id="what-about-other-remix-api">
+  What about other Remix API?
+  <a class="heading-link" href="#what-about-other-remix-api">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Actions and fetchers are affected as well, but remix-typedjson handles them.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">const</span> actionData = useTypedActionData&lt;<span style="font-weight:bold">typeof</span> action&gt;();
+</span></span></code></pre></div><p>and</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">const</span> fetcher = useTypedFetcher&lt;<span style="font-weight:bold">typeof</span> action&gt;();
+</span></span></code></pre></div><hr>
+<h2 id="could-it-be-solved-with-superjsonhttpsgithubcomblitz-jssuperjson">
+  Could it be solved with <a href="https://github.com/blitz-js/superjson">superjson</a>?
+  <a class="heading-link" href="#could-it-be-solved-with-superjsonhttpsgithubcomblitz-jssuperjson">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Yes, of course.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="font-weight:bold">import</span> { deserialize, serialize } <span style="font-weight:bold">from</span> <span style="font-style:italic">&#34;superjson&#34;</span>;
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">const</span> loader: <span style="">LoaderFunction</span> = <span style="font-weight:bold">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> notes = <span style="font-weight:bold">await</span> prisma.note.findMany({});
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">return</span> json(serialize({ notes }));
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">export</span> <span style="font-weight:bold">default</span> <span style="font-weight:bold">function</span> Problem() {
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">const</span> { notes } = deserialize(
+</span></span><span style="display:flex;"><span>    useLoaderData() <span style="font-weight:bold">as</span> SuperJSONResult
+</span></span><span style="display:flex;"><span>  ) <span style="font-weight:bold">as</span> LoaderData;
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>However, <code>remix-typesjson</code>&rsquo;s API is much more comfortable to use, not to mention that it&rsquo;s faster and more lightweight than superjson.</p>
+<hr>
+<p><a href="https://github.com/joelazar/lost-in-translation">Link</a> for the presentation and code examples.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2020 -
+    
+    2022
+     József Lázár 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script data-goatcounter="https://joelazar.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
