@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>hobby on joelazar</title>
+    <title>hobby on joelazar&#39;s personal blog</title>
     <link>https://joelazar.github.io/tags/hobby/</link>
-    <description>Recent content in hobby on joelazar</description>
+    <description>Recent content in hobby on joelazar&#39;s personal blog</description>
+    <image>
+      <url>https://joelazar.github.io/profile.jpg</url>
+      <link>https://joelazar.github.io/profile.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Fri, 12 Feb 2021 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refactored dotfiles</title>
@@ -13,7 +16,7 @@
       <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
       
       <guid>https://joelazar.github.io/posts/second-post/</guid>
-      <description>Finally, I managed to update my dotfiles today and change for chezmoi for managing them properly. It took a bit of time, but I&amp;rsquo;m pleased with the result now. If you are interested, you can find them here.</description>
+      <description>dotfiles</description>
     </item>
     
   </channel>
