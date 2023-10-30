@@ -5,10 +5,12 @@
     <link>https://joelazar.github.io/posts/</link>
     <description>Recent content in Posts on joelazar&#39;s personal blog</description>
     <image>
+      <title>joelazar&#39;s personal blog</title>
       <url>https://joelazar.github.io/profile.jpg</url>
       <link>https://joelazar.github.io/profile.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 22 Aug 2022 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lost in translation - Remix edition</title>

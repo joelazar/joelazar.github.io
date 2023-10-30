@@ -5,10 +5,12 @@
     <link>https://joelazar.github.io/tags/hobby/</link>
     <description>Recent content in hobby on joelazar&#39;s personal blog</description>
     <image>
+      <title>joelazar&#39;s personal blog</title>
       <url>https://joelazar.github.io/profile.jpg</url>
       <link>https://joelazar.github.io/profile.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 12 Feb 2021 08:00:00 +0100</lastBuildDate><atom:link href="https://joelazar.github.io/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refactored dotfiles</title>

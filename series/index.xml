@@ -5,9 +5,11 @@
     <link>https://joelazar.github.io/series/</link>
     <description>Recent content in Series on joelazar&#39;s personal blog</description>
     <image>
+      <title>joelazar&#39;s personal blog</title>
       <url>https://joelazar.github.io/profile.jpg</url>
       <link>https://joelazar.github.io/profile.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://joelazar.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://joelazar.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
