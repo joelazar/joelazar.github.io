@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>JSON on joelazar&#39;s personal blog</title>
-    <link>https://joelazar.github.io/tags/json/</link>
+    <link>https://joelazar.dev/tags/json/</link>
     <description>Recent content in JSON on joelazar&#39;s personal blog</description>
     <image>
       <title>joelazar&#39;s personal blog</title>
-      <url>https://joelazar.github.io/profile.jpg</url>
-      <link>https://joelazar.github.io/profile.jpg</link>
+      <url>https://joelazar.dev/profile.jpg</url>
+      <link>https://joelazar.dev/profile.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Aug 2022 08:00:00 +0100</lastBuildDate>
-    <atom:link href="https://joelazar.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://joelazar.dev/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lost in translation - Remix edition</title>
-      <link>https://joelazar.github.io/posts/lost-in-translation/</link>
+      <link>https://joelazar.dev/posts/lost-in-translation/</link>
       <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/posts/lost-in-translation/</guid>
+      <guid>https://joelazar.dev/posts/lost-in-translation/</guid>
       <description>Receive the right data from your server in Remix</description>
     </item>
   </channel>

@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joelazar.github.io/</loc>
+    <loc>https://joelazar.dev/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/json/</loc>
+    <loc>https://joelazar.dev/tags/json/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/posts/lost-in-translation/</loc>
+    <loc>https://joelazar.dev/posts/lost-in-translation/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/network/</loc>
+    <loc>https://joelazar.dev/tags/network/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/posts/</loc>
+    <loc>https://joelazar.dev/posts/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/remix/</loc>
+    <loc>https://joelazar.dev/tags/remix/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/</loc>
+    <loc>https://joelazar.dev/tags/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/typescript/</loc>
+    <loc>https://joelazar.dev/tags/typescript/</loc>
     <lastmod>2022-08-22T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/archlinux/</loc>
+    <loc>https://joelazar.dev/tags/archlinux/</loc>
     <lastmod>2021-02-12T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/dotfiles/</loc>
+    <loc>https://joelazar.dev/tags/dotfiles/</loc>
     <lastmod>2021-02-12T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/hobby/</loc>
+    <loc>https://joelazar.dev/tags/hobby/</loc>
     <lastmod>2021-02-12T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/posts/second-post/</loc>
+    <loc>https://joelazar.dev/posts/second-post/</loc>
     <lastmod>2021-02-12T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/dogs/</loc>
+    <loc>https://joelazar.dev/tags/dogs/</loc>
     <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/tags/funny/</loc>
+    <loc>https://joelazar.dev/tags/funny/</loc>
     <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/posts/first-post-with-my-dogs/</loc>
+    <loc>https://joelazar.dev/posts/first-post-with-my-dogs/</loc>
     <lastmod>2020-03-25T20:30:01+01:00</lastmod>
   </url><url>
-    <loc>https://joelazar.github.io/categories/</loc>
+    <loc>https://joelazar.dev/categories/</loc>
   </url><url>
-    <loc>https://joelazar.github.io/search/</loc>
+    <loc>https://joelazar.dev/search/</loc>
   </url><url>
-    <loc>https://joelazar.github.io/series/</loc>
+    <loc>https://joelazar.dev/series/</loc>
   </url>
 </urlset>

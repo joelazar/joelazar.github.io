@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on joelazar&#39;s personal blog</title>
-    <link>https://joelazar.github.io/tags/</link>
+    <link>https://joelazar.dev/tags/</link>
     <description>Recent content in Tags on joelazar&#39;s personal blog</description>
     <image>
       <title>joelazar&#39;s personal blog</title>
-      <url>https://joelazar.github.io/profile.jpg</url>
-      <link>https://joelazar.github.io/profile.jpg</link>
+      <url>https://joelazar.dev/profile.jpg</url>
+      <link>https://joelazar.dev/profile.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Aug 2022 08:00:00 +0100</lastBuildDate>
-    <atom:link href="https://joelazar.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://joelazar.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSON</title>
-      <link>https://joelazar.github.io/tags/json/</link>
+      <link>https://joelazar.dev/tags/json/</link>
       <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/json/</guid>
+      <guid>https://joelazar.dev/tags/json/</guid>
       <description></description>
     </item>
     <item>
-      <title>network</title>
-      <link>https://joelazar.github.io/tags/network/</link>
+      <title>Network</title>
+      <link>https://joelazar.dev/tags/network/</link>
       <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/network/</guid>
+      <guid>https://joelazar.dev/tags/network/</guid>
       <description></description>
     </item>
     <item>
-      <title>remix</title>
-      <link>https://joelazar.github.io/tags/remix/</link>
+      <title>Remix</title>
+      <link>https://joelazar.dev/tags/remix/</link>
       <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/remix/</guid>
+      <guid>https://joelazar.dev/tags/remix/</guid>
       <description></description>
     </item>
     <item>
-      <title>typescript</title>
-      <link>https://joelazar.github.io/tags/typescript/</link>
+      <title>Typescript</title>
+      <link>https://joelazar.dev/tags/typescript/</link>
       <pubDate>Mon, 22 Aug 2022 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/typescript/</guid>
+      <guid>https://joelazar.dev/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
-      <title>archlinux</title>
-      <link>https://joelazar.github.io/tags/archlinux/</link>
+      <title>Archlinux</title>
+      <link>https://joelazar.dev/tags/archlinux/</link>
       <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/archlinux/</guid>
+      <guid>https://joelazar.dev/tags/archlinux/</guid>
       <description></description>
     </item>
     <item>
-      <title>dotfiles</title>
-      <link>https://joelazar.github.io/tags/dotfiles/</link>
+      <title>Dotfiles</title>
+      <link>https://joelazar.dev/tags/dotfiles/</link>
       <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/dotfiles/</guid>
+      <guid>https://joelazar.dev/tags/dotfiles/</guid>
       <description></description>
     </item>
     <item>
-      <title>hobby</title>
-      <link>https://joelazar.github.io/tags/hobby/</link>
+      <title>Hobby</title>
+      <link>https://joelazar.dev/tags/hobby/</link>
       <pubDate>Fri, 12 Feb 2021 08:00:00 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/hobby/</guid>
+      <guid>https://joelazar.dev/tags/hobby/</guid>
       <description></description>
     </item>
     <item>
-      <title>dogs</title>
-      <link>https://joelazar.github.io/tags/dogs/</link>
+      <title>Dogs</title>
+      <link>https://joelazar.dev/tags/dogs/</link>
       <pubDate>Wed, 25 Mar 2020 20:30:01 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/dogs/</guid>
+      <guid>https://joelazar.dev/tags/dogs/</guid>
       <description></description>
     </item>
     <item>
-      <title>funny</title>
-      <link>https://joelazar.github.io/tags/funny/</link>
+      <title>Funny</title>
+      <link>https://joelazar.dev/tags/funny/</link>
       <pubDate>Wed, 25 Mar 2020 20:30:01 +0100</pubDate>
-      <guid>https://joelazar.github.io/tags/funny/</guid>
+      <guid>https://joelazar.dev/tags/funny/</guid>
       <description></description>
     </item>
   </channel>

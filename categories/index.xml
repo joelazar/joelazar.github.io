@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on joelazar&#39;s personal blog</title>
-    <link>https://joelazar.github.io/categories/</link>
+    <link>https://joelazar.dev/categories/</link>
     <description>Recent content in Categories on joelazar&#39;s personal blog</description>
     <image>
       <title>joelazar&#39;s personal blog</title>
-      <url>https://joelazar.github.io/profile.jpg</url>
-      <link>https://joelazar.github.io/profile.jpg</link>
+      <url>https://joelazar.dev/profile.jpg</url>
+      <link>https://joelazar.dev/profile.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
-    <atom:link href="https://joelazar.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://joelazar.dev/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
